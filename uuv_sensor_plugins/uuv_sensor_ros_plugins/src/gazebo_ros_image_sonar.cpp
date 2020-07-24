@@ -50,6 +50,10 @@
 #include <cv_bridge/cv_bridge.h>
 #include <opencv2/core/core.hpp>
 
+#ifndef CV_AA
+  #define CV_AA cv::LINE_AA
+#endif
+
 namespace gazebo
 {
 // Register this plugin with the simulator
